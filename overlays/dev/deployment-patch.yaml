@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: 1  # Set a different number of replicas for dev
+  template:
+    spec:
+      containers:
+      - name: my-app
+        image: nginx:latest
+        env:
+        - name: ENVIRONMENT
+          value: "dev"  # Set environment variable specific to dev
