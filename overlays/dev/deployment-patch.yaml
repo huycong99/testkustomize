@@ -8,7 +8,7 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: nginx:latest
+        image: nginx:efc0991ea5abe98d5c6f69e629af6f2e2a2c3245
         env:
         - name: ENVIRONMENT
           value: "dev"  # Set environment variable specific to dev
